@@ -46,9 +46,7 @@ function App() {
     passwordGenerator()
   },[length,numberAllowed,charAlowed,passwordGenerator])
 
-
-
-
+ 
 
   return (
     <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-3 py-3 my-8 text-orange-500 bg-gray-800'>
@@ -64,7 +62,9 @@ function App() {
         />
         <button
           onClick={copyPasswordToClipbord}
-          className='outline-none bg-orange-500 text-white px-3 py-1 shadow-lg shrink-0'
+          className='bg-orange-500 text-white px-4 py-2 rounded-lg 
+             transform transition-transform duration-150 
+             active:scale-95'
         >
           copy
         </button>
@@ -108,7 +108,9 @@ function App() {
       </div>
       <div>
         <h1>
-          {copied && <span className='ml-2 text-green-400 text-sm'>Copied!</span>}
+          {copied && (
+            <span className='ml-2 text-green-400 text-sm'>Copied!</span>
+          )}
         </h1>
       </div>
     </div>
