@@ -1,4 +1,4 @@
-# React Project
+# React Projects
 
 This repository contains a React application built to demonstrate modern frontend practices using React, functional components, hooks, and responsive design.
 
